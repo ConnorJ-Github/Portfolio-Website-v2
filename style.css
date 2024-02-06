@@ -1,0 +1,40 @@
+* {
+
+  font-family: 'Inter', sans-serif;
+}
+
+.navBar {
+  overflow: hidden;
+}
+
+.navBar-right {
+  float: right;
+}
+
+.navBar-right a {
+  text-decoration: none;
+  color: black;
+
+  padding-left: 43px;
+}
+
+#contact {
+
+  padding-right:17px;
+}
+
+.navBar-right a:hover{
+  text-decoration: underline;
+}
+
+
+.digitalClock {
+  color: black;
+  padding-left: 17px;
+}
+
+.digitalClock span {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
