@@ -7,32 +7,39 @@
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
   </head>
 
   <body>
+    <header class="header">
 
-    <header class="navBar">
+        <div class="clock">
+          <span class="digitalClock">LDN</span>
+          <span id="ldnTime"></span>
+        </div>
 
-        <span class="digitalClock">LDN</span>
-        <span id="ldnTime"></span>
+        <button class="navToggle"><i class='bx bx-menu'></i></button>
 
-        <nav class="navBar-right">
+        <nav class="navigation" data-visible="false">
           <a href="about" id="about">About</a>
           <a href="projects" id="projects">Projects</a>
           <a href="contact" id="contact">Contact</a>
-        </nav>
+
+      </div>
     </header>
 
-
-    <div class="heroSection">
+    <section class="home">
       <h1 id="topText">Hi there,</h1>
       <h1 id="bottomText">i'm Connor.</h1>
-      <h2 id="descText">A Computer Science Graduate & Software Engineer.</h2>
-    </div>
-
-
+      <p id="descText">A Computer Science Graduate & Software Engineer.</p>
+      <div class="socialMedia">
+        <a href="https://www.linkedin.com/in/connor-j-22b1071b9/"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://github.com/ConnorJ-Github"><i class='bx bxl-github' ></i></a>
+        <a href="Connor Jenkins - Curriculum Vitae - 2024.pdf" download class="resume-button">Resume</a>
+      </div>
+    </section>
   </body>
 </html>
