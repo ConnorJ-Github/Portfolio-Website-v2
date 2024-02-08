@@ -1,4 +1,8 @@
 
+//root variables
+
+var r = document.querySelector(':root');
+var rs = getComputedStyle(r);
 
 //Page Clock
 
@@ -25,8 +29,7 @@ if(visibility === "false"){
 
 
 
-//Move sword
-
+//Move sword & fireworks
 
 let moveable = document.getElementById("move");
 let initialX =0;
@@ -89,7 +92,11 @@ moveable.addEventListener(events[deviceType].move,(e) => {
 
     initialX = newX;
     initialY = newY;
+
+    //fireworks
+    r.style.setProperty('--fireWorks-on', 'visible');
   }
+  else{r.style.setProperty('--fireWorks-on', 'hidden');}
 });
 
 
