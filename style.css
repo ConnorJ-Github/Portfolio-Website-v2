@@ -86,7 +86,7 @@
 
   .navigation[data-visible="true"]
   {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
 
   .navToggle{
@@ -114,6 +114,7 @@
 
 .home{
   height: 100vh;
+  
 }
 
 .container{
@@ -197,9 +198,7 @@
     
   }
 
-  .fireWorks{
-    overflow: hidden;
-  }
+
 
 }
 
@@ -244,8 +243,6 @@
 .sword:hover, .sword:focus{
   background-image: url('SVG-images/swordHover.svg');
 }
-
-
 
 .rocks {
   background-image: url('SVG-images/Rocks.svg');
@@ -405,7 +402,14 @@
   animation: explode 3s .15s ease-in-out infinite;
 }
 
-
 .about{
+  height: 100vh;
+}
+
+.projects{
+  height: 100vh;
+}
+
+.contacts{
   height: 100vh;
 }
