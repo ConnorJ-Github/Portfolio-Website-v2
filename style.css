@@ -402,13 +402,28 @@
 }
 
 .aboutSection{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
   height: 100vh;
 }
 
 .projectSection{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
   height: 100vh;
 }
 
 .contactSection{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
   height: 100vh;
 }
