@@ -203,6 +203,7 @@
 .grassPositioning {
   aspect-ratio: 1440/372;
   width: 100%;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -399,31 +400,4 @@
 #fireWorks9 .explosion::before{
   background-color: rgb(152, 13, 216);
   animation: explode 3s .15s ease-in-out infinite;
-}
-
-.aboutSection{
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: red;
-  height: 100vh;
-}
-
-.projectSection{
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: blue;
-  height: 100vh;
-}
-
-.contactSection{
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
-  height: 100vh;
 }
