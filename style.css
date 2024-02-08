@@ -186,6 +186,22 @@
   color: white;
 }
 
+@media (max-width:35em) {
+
+  .home{
+    height: -webkit-fill-available;
+  }
+
+  .container{
+    transform: translate(-50%, -50%) scale(60%);
+    
+  }
+
+  .fireWorks{
+    overflow: hidden;
+  }
+
+}
 
 .grassPositioning {
   aspect-ratio: 1440/372;
@@ -261,9 +277,6 @@
   background-repeat: no-repeat;
 }
 
-.about{
-  height: 100vh;
-}
 
 .fireWorks {
   position: absolute;
@@ -390,4 +403,9 @@
 #fireWorks9 .explosion::before{
   background-color: rgb(152, 13, 216);
   animation: explode 3s .15s ease-in-out infinite;
+}
+
+
+.about{
+  height: 100vh;
 }
