@@ -14,10 +14,15 @@
 
   scroll-behavior: smooth;
 
-  overflow: hidden;
+  overflow-x: hidden;
+
+  padding: 0;
+  margin: 0;
 }
 
 .header {
+
+  padding-top: 1rem;
   overflow: hidden;
 
   display: flex;
@@ -179,3 +184,83 @@
   background-color: black;
   color: white;
 }
+
+
+.grassPositioning {
+  aspect-ratio: 1440/372;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.grassLayer {
+  background-image: url('SVG-images/Grass.svg');
+
+  position: absolute;
+  
+  bottom: 0px;
+
+}
+
+.sword{
+  background-image: url('SVG-images/Sword.svg');
+
+  position: absolute;
+  width: 73px;
+  height: 125px;
+
+  bottom: 20px;
+  left: 130px;
+
+  cursor:grabbing;
+
+  padding: 20px 20px;
+
+  background-repeat: no-repeat;
+
+  display: grid;
+
+
+}
+
+.sword:hover, .sword:focus{
+  background-image: url('SVG-images/swordHover.svg');
+}
+
+
+
+.rocks {
+  background-image: url('SVG-images/Rocks.svg');
+
+  position: absolute;
+
+  bottom: 0px;
+
+  width:212px;
+  height:164px;
+  background-repeat: no-repeat;
+
+
+}
+
+
+.sign {
+  background-image: url('SVG-images/Sign.svg');
+
+  position: absolute;
+
+  bottom: 0px;
+
+  height: 93px;
+  width: 74px;
+
+  transform: translateX(220px);
+
+  background-repeat: no-repeat;
+}
+
+.about{
+  height: 100vh;
+}
+
