@@ -16,7 +16,6 @@
 
   scroll-behavior: smooth;
 
-
   padding: 0;
   margin: 0;
 }
@@ -123,6 +122,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 .home h1{
@@ -197,8 +197,6 @@
     transform: translate(-50%, -50%) scale(60%);
     
   }
-
-
 
 }
 
@@ -279,6 +277,7 @@
   position: absolute;
 
   visibility: var(--fireWorks-on);
+
 }
 
 .explosion{
@@ -402,14 +401,14 @@
   animation: explode 3s .15s ease-in-out infinite;
 }
 
-.about{
+.aboutSection{
   height: 100vh;
 }
 
-.projects{
+.projectSection{
   height: 100vh;
 }
 
-.contacts{
+.contactSection{
   height: 100vh;
 }
