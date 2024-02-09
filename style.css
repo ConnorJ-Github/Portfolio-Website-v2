@@ -16,14 +16,14 @@
 
   font-family: var(--primary-font);
 
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 
   padding: 0;
   margin: 0;
 }
 
 html{
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
 }
 
 .header {
@@ -35,15 +35,13 @@ html{
   align-items: center;
   justify-content: space-between;
 
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
 }
 
 .navigation{
   display: flex;
 
 }
-
-
 
 .navigation a {
   text-decoration: none;
@@ -69,7 +67,7 @@ html{
   display: none;
 }
 
-@media (max-width:35em) {
+@media (max-width:600px) {
   .navigation{
 
     position: fixed;
@@ -193,7 +191,7 @@ main  h2{
   color: white;
 }
 
-@media (max-width:35em) {
+@media (max-width:600px) {
 
   main{
     height: -webkit-fill-available;
@@ -411,27 +409,29 @@ main  h2{
 #aboutSection, #projectSection, #contactSection {
   height: 100vh;
 
-  /* scroll-snap-align: start;
-  scroll-snap-stop: normal; */
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 
 /*About Section*/
 #aboutSection{
-  width: 100%;
   padding: 60px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
   column-gap: 30px;
+
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .aboutFire{
   background-image: url('SVG-images/Fire.svg');
   background-size: cover;
 
-  width:150px;
-  height:129px;
+  width:100px;
+  height:86px;
   background-repeat: no-repeat;
 
 }
@@ -467,7 +467,6 @@ main  h2{
 
 #accordion li label{
 
-
   padding: 10px;
   display: flex;
   align-items: center;
@@ -497,4 +496,19 @@ main  h2{
 
 #accordion label + input[type="radio"]:checked + .content{
   max-height: 400px;
+}
+
+@media (max-width:600px){
+
+  *{
+    overflow-x: hidden;
+  }
+  
+  #aboutSection{
+    flex-direction: column;
+  }
+
+  .aboutFire{
+    display: none;
+  }
 }
