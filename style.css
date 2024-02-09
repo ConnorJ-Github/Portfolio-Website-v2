@@ -116,7 +116,7 @@ html{
   }
 }
 
-main{
+#home{
   height: 100vh;
 }
 
@@ -129,11 +129,11 @@ main{
 
 }
 
-main h1{
+#home h1{
   font-size: var(--hero-fontSize);
 }
 
-main  h2{
+#home  h2{
   font-size: var(--hero2-fontSize);
 }
 
