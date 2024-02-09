@@ -20,6 +20,10 @@
   margin: 0;
 }
 
+html{
+  scroll-snap-type: y mandatory;
+}
+
 .header {
 
   padding-top: 1rem;
@@ -29,6 +33,7 @@
   align-items: center;
   justify-content: space-between;
 
+  scroll-snap-align: start;
 }
 
 .navigation{
@@ -111,7 +116,7 @@
   }
 }
 
-.home{
+main{
   height: 100vh;
   
 }
@@ -125,11 +130,11 @@
 
 }
 
-.home h1{
+main h1{
   font-size: var(--hero-fontSize);
 }
 
-.home  h2{
+main  h2{
   font-size: var(--hero2-fontSize);
 }
 
@@ -189,7 +194,7 @@
 
 @media (max-width:35em) {
 
-  .home{
+  main{
     height: -webkit-fill-available;
   }
 
@@ -403,4 +408,7 @@
 
 #aboutSection, #projectSection, #contactSection {
   height: 100vh;
+  display: block;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
