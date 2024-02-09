@@ -273,7 +273,6 @@
   background-repeat: no-repeat;
 }
 
-
 .fireWorks {
   position: absolute;
 
@@ -400,4 +399,8 @@
 #fireWorks9 .explosion::before{
   background-color: rgb(152, 13, 216);
   animation: explode 3s .15s ease-in-out infinite;
+}
+
+#aboutSection, #projectSection, #contactSection {
+  height: 100vh;
 }
