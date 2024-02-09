@@ -6,6 +6,8 @@
   --hero-fontSize: 5rem;
   --hero2-fontSize: 1rem;
 
+  --projectBox-fontsize: 25px;
+
   --fireWorks-on: hidden;
 
 }
@@ -118,7 +120,6 @@ html{
 
 main{
   height: 100vh;
-  
 }
 
 .container{
@@ -408,7 +409,92 @@ main  h2{
 
 #aboutSection, #projectSection, #contactSection {
   height: 100vh;
-  display: block;
   scroll-snap-align: start;
   scroll-snap-stop: normal;
+}
+
+/*About Section*/
+#aboutSection{
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: 30px;
+}
+
+.aboutFire{
+  background-image: url('SVG-images/Fire.svg');
+  background-size: cover;
+
+  width:150px;
+  height:129px;
+  background-repeat: no-repeat;
+
+}
+
+.aboutText{
+  flex-basis: 455px;
+
+  line-height: 1rem;
+}
+
+.aboutText p{
+  line-height: 25px;
+} 
+
+.aboutText h2{
+  padding: 30px 0;
+}
+
+#accordion{
+  margin: 100ox auto;
+  max-width: 500px;
+}
+
+#accordion li{
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  background: rgb(100, 94, 94);
+  padding: 10px;
+  border-radius: 4px;
+
+}
+
+#accordion li label{
+
+
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  color: white;
+
+  cursor: pointer;
+
+}
+
+#accordion li label span{
+
+  transform: rotate(90deg);
+
+}
+
+#accordion label + input[type="radio"]{
+  display: none;
+}
+
+#accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow:hidden;
+  transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .content{
+  max-height: 400px;
 }
