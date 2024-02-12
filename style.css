@@ -583,86 +583,51 @@ padding-top: 20px;
   color: #272727;
 }
 
-.projectBoxes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 60%;
-  margin: auto;
+.projectsTable{
+  border-collapse: collapse;
+   margin: 25px 0;
+   min-width: 800px;
 }
 
-.projectBox {
-  width: 200px;
-  padding: 15px;
-  border: 1px solid #eeeeee;
-  margin: 20px;
+.projectsTable tr{
+  text-align: left;
 
-  overflow: hidden;
-
-  border-radius: 5px;
 }
 
-.projectBox img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  overflow: hidden;
+.projectsTable td{
+  padding: 8px 15px;
 }
 
-.overlay{
-  position: relative;
+.projectsTable tbody td{
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.title{
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  border-radius: 5px;
-
-  display: flex;
+.projectsTable a {
   text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
+  color: black;
+}
 
-  transition: opacity 0.5s;
+.projectsTable a:hover{
+  text-decoration: underline;
+}
+
+.projectsTable #imageTag:hover {
+  text-decoration: underline;
+  cursor: pointer;
 
 }
 
-.title:hover{
-  opacity: 1;
-}
-
-@media (max-width:930px){
-
-  .projectBox{
-    width: 150px;
-  }
-}
 
 
-@media (max-width:700px){
+@media (max-width:600px){
 
-  .projectBox {
-    width: 75px;
+  .projectsTable{
+    min-width: 300px;
   }
 
-  .projectBoxes{
-    flex-direction: row;
-    margin: 0;
-  }
-
-
-  .projectBox{
-    margin: 2px;
+  #codeTag, #imageTag 
+  {
+    display: none;
   }
 }
 

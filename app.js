@@ -124,12 +124,12 @@ $(document).ready(function() {
     const value = $(this).attr('data-filter');
     if(value == 'all')
     {
-      $('.projectBox').show('1000');
+      $('.projectTbl').show('1000');
     }
     else 
     {
-      $('.projectBox').not('.'+value).hide('1000');
-      $('.projectBox').filter('.'+value).show('1000');
+      $('.projectTbl').not('.'+value).hide('1000');
+      $('.projectTbl').filter('.'+value).show('1000');
     }
   })
 });
