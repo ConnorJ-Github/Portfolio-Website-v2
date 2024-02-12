@@ -6,6 +6,7 @@
     <title>Connor Jenkins</title>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -266,7 +267,73 @@
     <!--Projects Section-->
 
     <section id="projectSection" class="projectSection">
-      <h1>Projects Section</h1>
+
+      <div class="projectHeader">
+        <h2>Projects</h2>
+      </div>
+
+      <ul class="filter">
+        <li class="list filterActive" data-filter="all">All</li>
+        <li class="list" data-filter="web">Web Design</li>
+        <li class="list" data-filter="c">C# & C++</li>
+        <li class="list" data-filter="other">Other</li>
+        <li class="list" data-filter="concept">Concept</li>
+      </ul>
+
+
+      <div class="projectBoxes">
+
+
+        <a href="https://github.com/ConnorJ-Github/Portfolio-Website-v1" target="_blank" class="projectBox web">
+          <div class="overlay">
+          <img src="Imgs/Web Portfolio V2.PNG" alt="Portfolio Version 1">
+            <div class="title">Web Portfolio V2</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/ConnorJ-Github/Portfolio-Website-v1" target="_blank" class="projectBox web">
+          <div class="overlay">
+          <img src="Imgs/Web Portfolio V1.PNG" alt="Portfolio Version 1">
+            <div class="title">Web Portfolio V1</div>
+          </div>
+        </a>
+
+        <a href="" class="projectBox c">
+          <div class="overlay">
+          <img src="Imgs/wrench.png" alt="WIP">
+          <div class="title">W.I.P</div>
+        </div>
+        </a>
+
+        <a href="" class="projectBox other">
+          <div class="overlay">
+          <img src="Imgs/wrench.png" alt="WIP">
+          <div class="title">W.I.P</div>
+        </div>
+        </a>
+
+        <a href="" class="projectBox other">
+          <div class="overlay">
+          <img src="Imgs/Clojure Experimentation.PNG" alt="WIP">
+          <div class="title">Clojure Experiment</div>
+        </div>
+        </a>
+
+        <a href="" class="projectBox other">
+          <div class="overlay">
+          <img src="Imgs/wrench.png" alt="WIP">
+          <div class="title">W.I.P</div>
+        </div>
+        </a>
+
+        <a href="" class="projectBox concept">
+          <div class="overlay">
+          <img src="Imgs/wrench.png" alt="WIP">
+          <div class="title">W.I.P</div>
+        </div>
+        </a>
+
+      </div>
     </section>
 
     <!--Projects Section-->

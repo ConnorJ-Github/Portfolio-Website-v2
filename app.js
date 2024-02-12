@@ -111,3 +111,25 @@ moveable.addEventListener("mouseleave", stopMovement);
 moveable.addEventListener(events[deviceType].up, (e)=>{
 moveElement = false;
 })
+
+
+// Filter
+
+$(document).on('click','.filter li', function(){
+  $(this).addClass('filterActive').siblings().removeClass('filterActive');
+});
+
+$(document).ready(function() {
+  $('.list').click(function(){
+    const value = $(this).attr('data-filter');
+    if(value == 'all')
+    {
+      $('.projectBox').show('1000');
+    }
+    else 
+    {
+      $('.projectBox').not('.'+value).hide('1000');
+      $('.projectBox').filter('.'+value).show('1000');
+    }
+  })
+});
