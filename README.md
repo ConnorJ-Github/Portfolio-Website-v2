@@ -6,9 +6,7 @@ This is Version 2 of my portfolio website.
 
 
 Page 1
-
-![image](https://github.com/ConnorJ-Github/Portfolio-Website-v2/assets/149539076/625d6f37-79f7-49b9-b751-b7da7b421e98)
-
+![NVIDIA_Share_GERfXg9HwI](https://github.com/ConnorJ-Github/Portfolio-Website-v2/assets/149539076/5f3d5c44-1e3e-44fd-aa9d-3493f61698be)
 
 Page 2
 
