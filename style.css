@@ -105,6 +105,10 @@ html{
     right: 1rem;
     z-index: 9999;
   }
+
+  *{
+    scroll-snap-type: none;
+  }
 }
 
 
